@@ -1,6 +1,8 @@
 /*
   Removing as much of the in-built css styling as possible
 */
+@import './variables';
+
 * {
     padding: 0;
     margin: 0;

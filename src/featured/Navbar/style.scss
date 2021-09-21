@@ -9,6 +9,9 @@ nav{
     padding: 0rem 5rem;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+    position: absolute; // make the navbar pop out of the page
+    top: 0;
+    left: 0;
 }
 
 .navbar-left{

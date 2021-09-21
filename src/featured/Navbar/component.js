@@ -1,33 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // importing our router modules
 import './style.scss';
 
-const component = () => 
+const component = ({
+    itemsCounter = 0
+}) => 
 {
     return (
 	<nav>
 		<ul className="navbar-left">
 			<li>
-				<h2 className="logo">Vengi</h2>
+				<Link to='/'>
+					<h2 className="logo">Vengi</h2>
+				</Link>
 			</li>
 			<li>
-				<a href="#">
-					Mens
-				</a>
+				<Link to='/men'>
+					Men
+				</Link>
 			</li>
 			<li>
-				<a href="#">
-					Mens
-				</a>
+				<Link to='/women'>
+					Women
+				</Link>
 			</li>
 			<li>
-				<a href="#">
+				<Link to='/journal'>
 					Journal
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a href="#">
-					About us
-				</a>
+				<Link to='/aboutus'>
+					About Us
+				</Link>
 			</li>
 		</ul>
 		<ul className="navbar-right">
@@ -35,7 +40,7 @@ const component = () =>
 				<h4 className="navbar-search">Search</h4>
 			</li>
 			<li>
-				<h4 className="navbar-items">Items<span className="items-counter">0</span></h4>
+				<h4 className="navbar-items">Items<span className="items-counter">{itemsCounter}</span></h4>
 			</li>
 		</ul>
 	</nav>
