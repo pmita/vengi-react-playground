@@ -1,12 +1,23 @@
 import React from 'react';
 import './style.scss';
+// import components
+import Banner from '../../featured/Banner';
+// import assets
+import bannerImage from '../../assets/images/menPageBanner.png';
 
 const component = () =>
 {
     return (
-	<div>
-		<h1>hello from Men page</h1>
-	</div>
+	<>
+		<Banner
+			bannerTitleOne='Winter'
+			bannerTitleTwo='Warmth'
+			bannerText='Our new Range of overcoats made from 100% 
+			cashmere, ethically sourced and without the 
+			price tage of old fashion houses.'
+			bannerImage={bannerImage}
+		/>
+	</>
     );
 };
 

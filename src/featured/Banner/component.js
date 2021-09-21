@@ -8,7 +8,7 @@ const component = ({
 	bannerTitleTwo = 'Sample Title vol.2',
 	bannerText = 'Sample Text goes here',
 	bannerImage,
-	bannerLink = '#'
+	bannerLink
 }) => 
 {
     return (
@@ -21,7 +21,7 @@ const component = ({
 		</div>
 		<div className="banner-right">
 			<img src={bannerImage} alt="depiction of our model as part of the banner section" />
-			<Link to={bannerLink}>See more here</Link>
+			{bannerLink ? <Link to={bannerLink}>See more here</Link> : ''}
 		</div>
 	</section>
     );
