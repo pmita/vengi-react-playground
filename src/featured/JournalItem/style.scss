@@ -6,22 +6,30 @@
 .cardItem{
     width: 100%;
     height: 100%;
-    &:hover{
-        cursor: pointer;
-        img{
-            opacity: 0.75;
-        }
-    }
     img{
         width: 100%;
         height: 80%;
         object-fit: cover;
         transition: $transition;
+        &:hover{
+            opacity: 0.75;
+        }
     }
     .cardItem-name{
         padding: 1rem 0;
     }
     p{
         padding: 1rem 1rem 1rem 0;
+    }
+    .btn-link{
+        padding: 1rem 2rem;
+        border: 2px solid $main-color;
+        background-color: $main-color;
+        color: $secondary-color;
+        transition: $transition;
+        &:hover{
+            background-color: $secondary-color;
+            color: $main-color;
+        }
     }
 }

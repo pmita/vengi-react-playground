@@ -17,7 +17,9 @@ const component = ({
 		<img src={img} alt='content relative to the article' />
 		<h4 className="cardItem-name">{title}</h4>
 		<p>{desc}</p>
-		<h6 className="cardItem-author">Written by {author}</h6>
+		<a href={link} className="btn-link">
+			Read More
+		</a>
 	</div>
     );
 };
