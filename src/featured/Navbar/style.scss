@@ -9,7 +9,8 @@ nav{
     padding: 0rem 5rem;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
-    position: absolute; // make the navbar pop out of the page
+    background: transparent;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -39,10 +40,7 @@ nav{
         font-size: $h6;
         position: absolute;
         top: -30%;
-        right: -30%;
-        background-color: $highlight-color;
-        padding: 0.1rem 0.65rem;
-        border-radius: 50%;
+        right: -20%;
         color: $secondary-color;
     }
 }
