@@ -1,0 +1,60 @@
+//imports
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+@import '../../assets/styles/base';
+
+nav{
+    min-height: 10vh;
+    width: 100%;
+    padding: 0rem 5rem;
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    position: absolute; // make the navbar pop out of the page
+    top: 0;
+    left: 0;
+}
+
+.navbar-left{
+    flex: 1 1 40rem;
+    @include flex(row, space-between, center);
+    a{
+        transition: $transition;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+
+.navbar-right{
+    flex: 1 1 40rem;
+    @include flex(row, flex-end, center);
+    li:nth-child(1){
+        padding: 0rem 1rem;
+    }
+}
+
+.navbar-items{
+    position: relative;
+    .items-counter{
+        font-size: $h6;
+        position: absolute;
+        top: -30%;
+        right: -30%;
+        background-color: $highlight-color;
+        padding: 0.1rem 0.65rem;
+        border-radius: 50%;
+        color: $secondary-color;
+    }
+}
+
+//media queries
+@media only screen and (max-width: 80px){
+    nav{
+        padding: 0rem 0.5rem;
+    }
+    .navbar-right{
+        @include flex(row, space-evenly, center);
+    }
+}
+
+

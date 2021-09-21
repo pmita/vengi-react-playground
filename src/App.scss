@@ -1,3 +1,8 @@
+//imports
+@import './assets/styles/base';
+
+
+
 h1{
-    color : red;
+    color : $main-color;
 }
