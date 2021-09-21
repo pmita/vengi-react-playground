@@ -1,6 +1,7 @@
 import React from 'react';
+import './style.scss';
 
-const Journal = () =>
+const component = () =>
 {
     return (
 	<div>
@@ -9,4 +10,4 @@ const Journal = () =>
     );
 };
 
-export default Journal;
+export default component;

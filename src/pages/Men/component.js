@@ -1,6 +1,7 @@
 import React from 'react';
+import './style.scss';
 
-const Men = () =>
+const component = () =>
 {
     return (
 	<div>
@@ -9,4 +10,4 @@ const Men = () =>
     );
 };
 
-export default Men;
+export default component;

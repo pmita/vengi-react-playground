@@ -1,6 +1,7 @@
 import React from 'react';
+import './style.scss';
 
-const Home = () =>
+const component = () =>
 {
     return (
 	<div>
@@ -9,4 +10,4 @@ const Home = () =>
     );
 };
 
-export default Home;
+export default component;
