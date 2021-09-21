@@ -1,0 +1,13 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/base';
+@import '../../assets/styles/mixins';
+
+.journal-section{
+    margin: 10vh 0 0 0;
+    min-height: 90vh;
+    width: 100%;
+    @include flex(column, flex-start, center);
+    h1{
+        padding: 1rem 0;
+    }
+}

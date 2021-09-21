@@ -1,12 +1,15 @@
 import React from 'react';
 import './style.scss';
+// import components
+import JournalShowcase from '../../featured/JournalShowcase';
 
 const component = () =>
 {
     return (
-	<div>
-		<h1>hello from Journal page</h1>
-	</div>
+	<section className="journal-section">
+		<h1>Latest Happenings</h1>
+		<JournalShowcase />
+	</section>
     );
 };
 

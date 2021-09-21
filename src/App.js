@@ -6,21 +6,25 @@ import Men from './pages/Men';
 import Women from './pages/Women';
 import Journal from './pages/Journal';
 import AboutUs from './pages/AboutUs';
+// import our Context Provider
+import { ProjectProvider } from './store/Context';
 function App() 
 {
   return (
-	<Router>
-		<div className='App'>
-			<Navbar />
-			<Switch>
-				<Route path="/" exact component={Home} />
-				<Route path="/men" component={Men} />
-				<Route path="/women" component={Women} />
-				<Route path="/journal" component={Journal} />
-				<Route path="/aboutus" component={AboutUs} />
-			</Switch>
-		</div>
-	</Router>
+	<ProjectProvider>
+		<Router>
+			<div className='App'>
+				<Navbar />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/men" component={Men} />
+					<Route path="/women" component={Women} />
+					<Route path="/journal" component={Journal} />
+					<Route path="/aboutus" component={AboutUs} />
+				</Switch>
+			</div>
+		</Router>
+	</ProjectProvider>
 
   );
 }
